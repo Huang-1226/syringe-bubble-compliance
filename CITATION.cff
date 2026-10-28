@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this report, data, or code, please cite this repository."
+title: "Bubble Compliance in a Syringe Hydraulic Transmission: Static Stiffness, Dynamic Response, and Variable Stiffness"
+type: report
+authors:
+  - family-names: Huang
+    given-names: Zihao
+date-released: 2026-10-28
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/Huang-1226/syringe-bubble-compliance"
+url: "https://github.com/Huang-1226/syringe-bubble-compliance"
+keywords:
+  - hydraulic transmission
+  - bubble compliance
+  - air spring
+  - variable stiffness
+  - soft robotics
+  - time constant
+abstract: >-
+  An experimental study of how trapped air bubbles change the static stiffness,
+  dynamic response, and variable-stiffness capability of a small syringe
+  hydraulic transmission. The report covers 1, 2, and 5 mL air volumes, measured
+  static stiffness, step-response time constants, and a soft-joint demonstration,
+  and provides the measured CSV data and analysis code.

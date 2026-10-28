@@ -1,0 +1,11 @@
+file,air_ml,repeat,speed_mms,note
+step_V1.0_r1.csv,1.0,1,16.0,0.5mm@16mm/s
+step_V1.0_r2.csv,1.0,2,16.0,0.5mm@16mm/s
+step_V2.0_r1.csv,2.0,1,10.0,2mm@10mm/s
+step_V2.0_r2.csv,2.0,2,10.0,2mm@10mm/s
+step_V2.0_r3.csv,2.0,3,10.0,2mm@10mm/s
+step_V2.0_r4.csv,2.0,4,10.0,2mm@10mm/s
+step_V5.0_r1.csv,5.0,1,10.0,2mm@10mm/s
+step_V5.0_r2.csv,5.0,2,10.0,2mm@10mm/s
+step_V5.0_r3.csv,5.0,3,10.0,2mm@10mm/s
+step_V5.0_r4.csv,5.0,4,10.0,2mm@10mm/s
