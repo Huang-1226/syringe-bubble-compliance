@@ -4,6 +4,8 @@
 
 Author: **Zihao Huang** · October 2026
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23719036.svg)](https://doi.org/10.5281/zenodo.23719036)
+
 This repository contains the English technical report, the measured data, and the Python code used to produce every figure and table. It is a technical report, not a peer-reviewed journal article. The Chinese internal report is intentionally not included.
 
 ---
@@ -143,11 +145,12 @@ The main limitations are the 1 mL displacement resolution, the finite input ramp
   year         = {2026},
   month        = {10},
   howpublished = {Technical report, GitHub},
+  doi          = {10.5281/zenodo.23719036},
   url          = {https://github.com/Huang-1226/syringe-bubble-compliance}
 }
 ```
 
-A DOI will be assigned through Zenodo when the repository is released. Update the URL and add the DOI here after the first release.
+The archived release is available at https://doi.org/10.5281/zenodo.23719036.
 
 ## License
 
