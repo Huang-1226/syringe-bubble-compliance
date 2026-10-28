@@ -41,7 +41,7 @@ The full report contains the schematic, spring calibration, static stiffness, ti
 
 ## Hardware
 
-The `hardware/stl/` folder contains the 3D-print files for the syringe flange clamps, the slider-to-push-rod coupler, the push-rod clips for 5, 10, and 20 mL syringes, and the load-bar hook. Print settings and assembly notes are in [`hardware/README.md`](hardware/README.md). Dimensions are in millimetres. These parts are fixture components, not pressure-rated hardware.
+The `hardware/stl/` folder contains the 3D-print files and `hardware/scad/` contains the OpenSCAD sources for the syringe flange clamps, the slider-to-push-rod coupler, the push-rod clips for 5, 10, and 20 mL syringes, and the load-bar hook. Print settings and assembly notes are in [`hardware/README.md`](hardware/README.md). Dimensions are in millimetres. These parts are fixture components, not pressure-rated hardware. All parts are from the bubble-compliance fixture; the older load-cell efficiency setup is not included.
 
 ## Repository layout
 
@@ -66,6 +66,12 @@ The `hardware/stl/` folder contains the 3D-print files for the syringe flange cl
 │  │  ├─ plunger_clip_10ml.stl
 │  │  ├─ plunger_clip_20ml.stl
 │  │  └─ bar_hook.stl
+│  ├─ scad/
+│  │  ├─ flange_clamp.scad
+│  │  ├─ flange_clamp_force.scad
+│  │  ├─ slider_coupler.scad
+│  │  ├─ plunger_clip.scad
+│  │  └─ bar_hook.scad
 │  └─ README.md                    # print settings, assembly, license
 ├─ analysis/
 │  ├─ bubble_stiffness.py          # fittings and the original analysis commands

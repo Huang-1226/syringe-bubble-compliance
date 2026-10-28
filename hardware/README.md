@@ -1,6 +1,6 @@
 # 3D-printed parts
 
-These are the STL files for the syringe hydraulic bubble-compliance setup used in the report. They are supplied for reproduction of the fixture; they are not pressure-rated components.
+These are the STL files and OpenSCAD sources for the syringe hydraulic bubble-compliance setup used in the report. They are supplied for reproduction of the fixture; they are not pressure-rated components. All parts in this folder belong to the bubble-compliance fixture. The older load-cell efficiency setup is not included.
 
 ## Files
 
@@ -13,7 +13,21 @@ These are the STL files for the syringe hydraulic bubble-compliance setup used i
 | `stl/plunger_clip_20ml.stl` | Push-rod clip / stop for a 20 mL syringe | 1 | Output syringe in the reported experiments. |
 | `stl/bar_hook.stl` | Load-bar / weight-string hook | 1–2 | Guides the string that transfers the water load to the output rod. |
 
-All dimensions are in millimetres. The STL files contain the final printed geometry only; the parametric CAD sources are not included in this release.
+All dimensions are in millimetres.
+
+## CAD sources
+
+The OpenSCAD sources are in `scad/`:
+
+| File | Part | Notes |
+|---|---|---|
+| `scad/flange_clamp.scad` | General syringe flange clamp | Non-force variant. |
+| `scad/flange_clamp_force.scad` | Force-measuring input flange clamp | Corresponds to `stl/flange_clamp.stl`. Set `show_bar = false` before exporting the STL; the reference bar is only for preview. |
+| `scad/slider_coupler.scad` | Slider-to-push-rod coupler | Uses the 10 mL syringe dimensions. |
+| `scad/plunger_clip.scad` | Parametric push-rod clip | Set `WHICH = 1`, `2`, or `3` for the 5, 10, or 20 mL STL. |
+| `scad/bar_hook.scad` | Load-bar / weight-string hook | Matches `stl/bar_hook.stl`. |
+
+The STL files are exports of these sources. `plunger_clip_5ml.stl`, `plunger_clip_10ml.stl`, and `plunger_clip_20ml.stl` are the three `WHICH` settings of `plunger_clip.scad`. The platform, output bracket, and syringe-clip sources from the same fixture are not included because they are outside the four accessory groups listed here.
 
 ## Suggested print settings
 
