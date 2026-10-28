@@ -59,7 +59,6 @@ The full report contains the schematic, spring calibration, static stiffness, ti
 │  ├─ plot_en.py                   # English-labelled figures
 │  ├─ make_setup_en.py             # English schematic and annotated photo
 │  └─ data/bubble/                 # measured CSV/JSON files and figure inputs
-├─ make_bubble_report_en.py        # builds the English DOCX
 ├─ requirements.txt
 ├─ CITATION.cff
 ├─ LICENSE                         # MIT for the code
@@ -84,7 +83,7 @@ All numbers in the report come from measured CSV files. There is no synthetic or
 
 The measured data can be reused under CC BY 4.0 with attribution.
 
-## Reproduce
+## Reproduce the fits and figures
 
 ```bash
 python -m venv .venv
@@ -98,10 +97,9 @@ python analysis/bubble_stiffness.py demo   --dir analysis/data/bubble --k-spring
 
 python analysis/plot_en.py
 python analysis/make_setup_en.py
-python make_bubble_report_en.py
 ```
 
-`make_bubble_report_en.py` writes `report/Bubble_Compliance_Report_EN.docx`. The included PDF was exported from that DOCX with Microsoft Word. The analysis script prints some messages in Chinese because it is the original measurement script; all data columns and numerical outputs are language-neutral.
+The final report is included in `report/` as DOCX and PDF. The script that assembles the DOCX is intentionally not included in this repository; the repository focuses on the measured data, the fits, and the figures. The analysis script prints some messages in Chinese because it is the original measurement script; all data columns and numerical outputs are language-neutral.
 
 ## Experimental notes
 
