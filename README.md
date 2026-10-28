@@ -39,6 +39,10 @@ The R² values are for three mean points only; they describe collinearity and ar
 
 The full report contains the schematic, spring calibration, static stiffness, time constant, normalized step responses, and soft-joint stiffness figures.
 
+## Hardware
+
+The `hardware/stl/` folder contains the 3D-print files for the syringe flange clamps, the slider-to-push-rod coupler, the push-rod clips for 5, 10, and 20 mL syringes, and the load-bar hook. Print settings and assembly notes are in [`hardware/README.md`](hardware/README.md). Dimensions are in millimetres. These parts are fixture components, not pressure-rated hardware.
+
 ## Repository layout
 
 ```text
@@ -54,6 +58,15 @@ The full report contains the schematic, spring calibration, static stiffness, ti
 │  ├─ fig5_time_constant.png
 │  ├─ fig6_step_responses.png
 │  └─ fig7_soft_joint.png
+├─ hardware/
+│  ├─ stl/
+│  │  ├─ flange_clamp.stl
+│  │  ├─ slider_coupler.stl
+│  │  ├─ plunger_clip_5ml.stl
+│  │  ├─ plunger_clip_10ml.stl
+│  │  ├─ plunger_clip_20ml.stl
+│  │  └─ bar_hook.stl
+│  └─ README.md                    # print settings, assembly, license
 ├─ analysis/
 │  ├─ bubble_stiffness.py          # fittings and the original analysis commands
 │  ├─ plot_en.py                   # English-labelled figures
@@ -133,7 +146,7 @@ A DOI will be assigned through Zenodo when the repository is released. Update th
 ## License
 
 - **Code:** MIT License; see `LICENSE`.
-- **Report, figures, and data:** Creative Commons Attribution 4.0 International (CC BY 4.0); see `LICENSE-CC-BY-4.0.txt`.
+- **Report, figures, data, and 3D-print files:** Creative Commons Attribution 4.0 International (CC BY 4.0); see `LICENSE-CC-BY-4.0.txt` and `hardware/README.md`.
 
 ## Contact
 
